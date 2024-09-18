@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
         <div className='w-[50%] flex justify-center'>
         <img src={Logo} className='w-[160px] h-[60px] ' />
         </div>
-        <div className='md:w-[60vw] text-md md:text-2xl font-semibold py-[10px]'>
+        <div className='md:w-[65vw] text-md md:text-2xl font-semibold py-[10px]'>
         <div className='w-[100%] h-[50px] flex border rounded-full md:space-x-8'>
         <div className="w-fit text-nowrap flex items-center p-4
         rounded-full border border-gray-300 bg-[#D0C5C5] md:w-[500px]">
@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
         </div>
         <input
           type="text"
-          className="p-2 w-full placeholder:font-bold md:placeholder:text-2xl outline-none"
+          className="p-2 w-full placeholder:font-semibold md:placeholder:text-2xl outline-none"
           placeholder="Search"
         />
         <button className="flex justify-center items-center bg-[#D0C5C5] text-white rounded-full w-[100px] ">
