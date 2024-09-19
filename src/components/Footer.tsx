@@ -14,7 +14,8 @@ const Footer: React.FC = () => {
        
      }}
       >
-        <div className="w-[20vw] flex flex-col items-end">
+        <div className="w-[100%] flex flex-col items-center md:items-start
+         md:ml-[100px]">
         <img src={Logo1} className="w-40"  />
         <p>All Rights Reserved </p>
         </div>
