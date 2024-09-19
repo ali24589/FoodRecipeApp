@@ -4,7 +4,7 @@ import croppedpistaciafood from '../assets/images/cropped-pistaciafood.png'
 const HeroSection:React.FC = () => {
   return (
     <>
-      <div className='max-w-[430px] md:max-w-[100%] h-[60vh] text-white text-6xl flex justify-center items-center
+      <div className='max-w-[430px] md:max-w-[100%] md:h-[370px] h-[240px] text-white text-6xl flex justify-center items-center
        lg:items-center'
      style={{
         backgroundImage: `url(${croppedpistaciafood})`,

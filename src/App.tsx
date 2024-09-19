@@ -8,10 +8,10 @@ const RecipeDetails = React.lazy(() => import("./pages/RecipeDetails"));
 
 function App() {
   return (
-    <div>
+    <div style={{ fontFamily: "Montserrat" }}>
       <Router>
         {/* Wrapping the entire Routes with Suspense */}
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div className="flex justify-center">Loading...</div>}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Home" element={<Home />} />

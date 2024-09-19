@@ -12,8 +12,9 @@ const Navbar: React.FC = () => {
   };
   return (
     <div
-      className="w-[100%] bg-black text-xl font-Montserrat font-semibold text-white
-     p-[16px] px-[50px] shadow-xl"
+      className="w-[100%] z-20 bg-black text-xl font-semibold text-white
+     p-[16px] px-[20px] shadow-xl"
+    
     >
       <div className="block lg:hidden">
         {isHamburger && (
@@ -45,9 +46,8 @@ const Navbar: React.FC = () => {
 
       {!isHamburger && (
         <div className="lg:hidden flex flex-col space-y-4 mt-4">
-          <nav className="flex flex-col  space-y-4">
-            <RxCross1 onClick={hambrugerHandler} className="w-10 h-10" />
-
+          <nav className="flex flex-col space-y-4">
+            <RxCross1 onClick={hambrugerHandler} className="w-10 h-10 ml-auto" />
             <NavLink to="/Home">Community</NavLink>
             <NavLink to="/Home">Books</NavLink>
             <NavLink to="/Home">Recipe Index</NavLink>

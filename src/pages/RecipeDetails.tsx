@@ -19,7 +19,6 @@ const RecipeDetails: React.FC = () => {
         const data: Recipe = await fetchRecipeById(Number(id));
         setRecipe(data);
         setLoading(false);
-        console.log(recipe);
       } catch (error) {
         console.error("Error fetching recipe details:", error);
       }
@@ -48,12 +47,9 @@ const RecipeDetails: React.FC = () => {
                 Ingredients
               </p>
               <ul>
-                {recipe?.ingredients.map((ingredients, index) => (
-                  <div>
+                {recipe?.ingredients.map((ingredients,index) => (
                     <li key={index} className="custom-bullet">
-                      {ingredients}
-                    </li>
-                  </div>
+                    {ingredients}</li>
                 ))}
               </ul>
             </div>

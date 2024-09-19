@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
       <div
         className="w-[100%] flex text-white items-center justify-center lg:justify-start h-[200px]"
         style={{ backgroundImage: `url(${Rectangle48})`,
-        backgroundSize:'contain'
+        backgroundSize:'cover'
        
      }}
       >

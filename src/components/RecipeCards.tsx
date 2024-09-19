@@ -29,7 +29,7 @@ const RecipeCards: React.FC = () => {
   return (
     <>
       <div className="flex justify-center">
-        <div className="md:w-[70%] grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+        <div className="md:w-[70%] grid lg:grid-cols-3 md:grid-cols-2 gap-8 ">
           {recipes.map((recipe) => (
             <NavLink
               to={`/RecipeDetails/${recipe.id}`}
@@ -40,6 +40,8 @@ const RecipeCards: React.FC = () => {
                 style={{
                   backgroundImage: `url(${recipe.image})`,
                   backgroundSize: "cover",
+                  fontFamily:'Montez',
+                  fontSize:'50px'
                 }}
                 className="flex justify-center items-end p-6 text-white h-72 text-3xl
          font-Montez"
@@ -47,7 +49,9 @@ const RecipeCards: React.FC = () => {
                 {recipe.cuisine}
               </h3>
               <div className="flex justify-between">
-                <p>{recipe.name}</p>
+                <p
+               
+                >{recipe.name}</p>
                 <p
                   className="h-fit flex justify-center items-center bg-[#84BD00]
         w-[90px] "

@@ -18,7 +18,7 @@ function Home() {
       </div>
       <HeroSection />
       <NavigationMenu />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className="flex justify-center">Loading...</div>}>
         <RecipeCards />
       </Suspense>
       <Footer />
