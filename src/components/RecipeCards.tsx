@@ -77,6 +77,5 @@ const RecipeCards: React.FC = () => {
       </div>
     </>
   );
-};
-
+}
 export default React.memo(RecipeCards);
