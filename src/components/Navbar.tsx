@@ -12,8 +12,8 @@ const Navbar: React.FC = () => {
   };
   return (
     <div
-      className="w-[100%] z-20 bg-black text-xl font-semibold text-white
-     p-[16px] px-[20px] shadow-xl"
+      className="w-[100%] sticky top-0 z-20 bg-black text-xl font-semibold text-white
+     p-[16px]  shadow-xl"
     
     >
       <div className="block lg:hidden">
@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {!isHamburger && (
-        <div className="lg:hidden flex flex-col space-y-4 mt-4">
+        <div className="lg:hidden sticky z-50 bg-black w-[100%] flex flex-col space-y-4 mt-4">
           <nav className="flex flex-col space-y-4">
             <RxCross1 onClick={hambrugerHandler} className="w-10 h-10 ml-auto" />
             <NavLink to="/Home">Community</NavLink>

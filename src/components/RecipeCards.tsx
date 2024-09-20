@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { fetchRecipes, Recipe, RecipesResponse } from "../services/RecipeApi";
 import { NavLink } from "react-router-dom";
-import { LuClock9 } from "react-icons/lu"
-import {Rate} from 'antd'
+import { LuClock9 } from "react-icons/lu";
+import { Rate } from "antd";
 
 const RecipeCards: React.FC = () => {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
@@ -18,6 +18,7 @@ const RecipeCards: React.FC = () => {
         console.error("Error fetching recipes:", error);
       }
     };
+
 
     getRecipes();
   }, []);
@@ -40,18 +41,16 @@ const RecipeCards: React.FC = () => {
                 style={{
                   backgroundImage: `url(${recipe.image})`,
                   backgroundSize: "cover",
-                  fontFamily:'Montez',
-                  fontSize:'50px'
+                  fontFamily: "Montez",
+                  fontSize: "50px",
                 }}
                 className="flex justify-center items-end p-6 text-white h-72 text-3xl
-         font-Montez"
+                 "
               >
                 {recipe.cuisine}
               </h3>
               <div className="flex justify-between">
-                <p
-               
-                >{recipe.name}</p>
+                <p>{recipe.name}</p>
                 <p
                   className="h-fit flex justify-center items-center bg-[#84BD00]
         w-[90px] "
@@ -65,10 +64,10 @@ const RecipeCards: React.FC = () => {
                 </p>
                 <p>{recipe.mealType}</p>
               </div>
-             <div className="flex justify-end">
-             <Rate count={5} value={recipe.rating} allowHalf disabled />
-             </div>
-   
+              <div className="flex justify-end">
+                <Rate count={5} value={recipe.rating} allowHalf disabled />
+              </div>
+
               <br />
               <br />
               <br />
@@ -80,4 +79,4 @@ const RecipeCards: React.FC = () => {
   );
 };
 
-export default RecipeCards;
+export default React.memo(RecipeCards);

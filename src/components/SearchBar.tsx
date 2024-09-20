@@ -8,8 +8,7 @@ const SearchBar: React.FC = () => {
        "
     >
       <div className="flex md:flex-row flex-col md:space-x-4 w-full">
-        <div className="md:w-[50%] fixed z-10 top-[20%] md:top-[13%] left-0 md:left-[30%] text-md md:text-2xl font-semibold py-[10px]">
-
+        <div className="md:w-[70%] text-md md:text-2xl font-semibold py-[10px]">
           <div className="w-[100%] bg-white h-[50px] flex border rounded-full md:space-x-8">
             <div className="w-fit text-nowrap flex items-center p-4 rounded-full border border-gray-300 bg-[#D0C5C5] md:w-[500px]">
               All Categories
@@ -24,7 +23,6 @@ const SearchBar: React.FC = () => {
             <button className="flex justify-center items-center bg-[#D0C5C5] text-white rounded-full w-[100px]">
               <img src={searchIcon} className="w-[26px] h-[26px]" />
             </button>
-            
           </div>
         </div>
       </div>

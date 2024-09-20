@@ -28,6 +28,7 @@ export const fetchRecipes = async (): Promise<RecipesResponse> => {
     const response = await axios.get<RecipesResponse>(
       "https://dummyjson.com/recipes"
     );
+
     return response.data;
   } catch (error) {
     console.error("Error fetching recipes:", error);

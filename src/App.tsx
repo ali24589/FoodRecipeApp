@@ -10,7 +10,7 @@ function App() {
   return (
     <div style={{ fontFamily: "Montserrat" }}>
       <Router>
-        {/* Wrapping the entire Routes with Suspense */}
+        
         <Suspense fallback={<div className="flex justify-center">Loading...</div>}>
           <Routes>
             <Route path="/" element={<Home />} />

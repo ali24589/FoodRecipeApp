@@ -10,18 +10,22 @@ const RecipeCards = React.lazy(() => import("../components/RecipeCards"));
 function Home() {
   return (
     <>
-    <div className="space-y-4">
-      <Header />
-      <div className="flex flex-col md:flex-row md:items-center">
-        <Logo />
-        <SearchBar />
-      </div>
-      <HeroSection />
-      <NavigationMenu />
-      <Suspense fallback={<div className="flex justify-center">Loading...</div>}>
-        <RecipeCards />
-      </Suspense>
-      <Footer />
+      <div className="space-y-4">
+        <div className="w-[100%] sticky z-20 top-0 space-y-2 bg-white ">
+          <Header />
+          <div className="flex flex-col md:flex-row md:items-center bg-white">
+            <Logo />
+            <SearchBar />
+          </div>
+        </div>
+        <HeroSection />
+        <NavigationMenu />
+        <Suspense
+          fallback={<div className="flex justify-center">Loading...</div>}
+        >
+          <RecipeCards />
+        </Suspense>
+        <Footer />
       </div>
     </>
   );

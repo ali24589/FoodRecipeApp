@@ -67,4 +67,4 @@ const RecipeDetails: React.FC = () => {
   );
 };
 
-export default RecipeDetails;
+export default React.memo(RecipeDetails);
